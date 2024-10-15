@@ -1,0 +1,15 @@
+body {
+    background-color: #008080;
+    margin: 0px;
+    zoom: 200%;
+}
+
+.window.maximized {
+    position: absolute;
+    width: calc(100vw / 2 - 6px);
+    min-height: calc(100vh / 2 - 6px);
+}
+
+shard-cut:hover {
+    color: darkred;
+}

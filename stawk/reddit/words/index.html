@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for words that a Reddit user said - Stawker Client</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <div class="window maximized">
+        <div class="title-bar">
+            <div class="title-bar-text">Search for words that a Reddit user said - Stawker</div>
+        </div>
+        <div class="window-body">
+            <form action="/stawk/reddit/words/results/" method="get">
+                <div class="field-row-stacked" style="width: 200px">
+                    <label for="u">Username</label>
+                    <input id="u" name="u" type="text" required>
+                    <label for="q">Word</label>
+                    <input id="q" name="q" type="text" required>
+                </div>
+                <br><input id="submit" type="submit" value="DEPLOY THE STAWKER" onmouseup="if (!document.getElementById('q').value == '') {document.getElementById('submit').value = 'LOADING...'}">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
